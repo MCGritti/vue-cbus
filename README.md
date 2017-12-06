@@ -4,7 +4,7 @@
 3. [Pluggin it into your app](#plugin)
 4. [Usage](#usage)
 
-## Introduction <a name="intro"></a>
+## <a name="intro">Introduction</a>
 This plugin provides a easy way to handle events in VueJS (V.2) using contexts.  
 
 ## Installation <a name="install"></a>
