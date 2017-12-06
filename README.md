@@ -118,6 +118,8 @@ This plugin inject 3 prototypes into the Vue instance:
 3. `purge()`:
     Removes all contexts
 4. `get(name)`:
-    Get context *name*. It creates a new context if *name* does not exist. **$lbus** is an alias for **$cbus.get**.
+    Get context *name*. It creates a new context if *name* does not exist.
+    
+    Obs.: **$lbus** is an alias for **$cbus.get**.
 
 
