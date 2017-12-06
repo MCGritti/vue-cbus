@@ -1,6 +1,6 @@
 {
   "name": "vue-cbus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Easy event handling in VueJS (with contexts)",
   "main": "index.js",
   "scripts": {
