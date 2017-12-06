@@ -3,7 +3,7 @@ import { Bus, enableDebugMode, createContext, deleteContext, clearContexts, getC
 
 const CBusPlugin = {
   install (Vue, options) {
-    if (options.enableDebugMode) {
+    if (options.debugMode) {
       enableDebugMode()
     }
     Vue.contexts = new Map()
