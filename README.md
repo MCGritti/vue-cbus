@@ -3,6 +3,7 @@
 2. [Installation](#install)
 3. [Pluggin it into your app](#plugin)
 4. [Usage](#usage)
+5. [Documentation](#doc)
 
 ## <a name="intro">Introduction</a>
 This plugin provides a easy way to handle events in VueJS (V.2) using contexts.  
@@ -13,7 +14,7 @@ You can install this plugin using npm
 npm i --save vue-cbus
 ```
 
-## Pluggin it into your app <a name="plugin"></a>
+## <a name="plugin">Pluggin it into your app</a>
 To use vue-cbus in your VueJS app, you just need to tell VueJS to use it.
 ```js
 import Vue from 'vue'
@@ -27,7 +28,7 @@ Vue.use(CBus, {
 ```
 The *debugMode* option controls if **vue-cbus** will log debug messages.
 
-## Usage <a name="usage"></a>
+## <a name="usage">Usage</a>
 **vue-cbus** automatically creates a global context when the applcation starts.
 You can access it in your component using *this.$gbus*, like shown in the example
 below
@@ -92,5 +93,9 @@ export default {
   }
 }
 ```
+
+## <a name="doc">Documentation</a>
+
+Under development.
 
 
