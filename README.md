@@ -96,6 +96,9 @@ export default {
 
 ## <a name="doc">Documentation</a>
 
-Under development.
+This plugin inject 3 prototypes into the Vue instance:
+1. Vue.prototype.$gbus // Access to the global bus
+2. Vue.prototype.$lbus // Gets/Creates a local bus
+3. Vue.prototype.$cbus // Controls the local buses
 
 
