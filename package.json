@@ -1,0 +1,24 @@
+{
+  "name": "vue-cbus",
+  "version": "0.0.1",
+  "description": "Easy event handling in VueJS (with contexts)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MCGritti/vue-cbus.git"
+  },
+  "keywords": [
+    "Event",
+    "Bus",
+    "Context"
+  ],
+  "author": "Marcos Cesar Gritti <cesargritti@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MCGritti/vue-cbus/issues"
+  },
+  "homepage": "https://github.com/MCGritti/vue-cbus#readme"
+}
