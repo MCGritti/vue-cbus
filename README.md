@@ -97,8 +97,27 @@ export default {
 ## <a name="doc">Documentation</a>
 
 This plugin inject 3 prototypes into the Vue instance:
-1. Vue.prototype.$gbus // Access to the global bus
-2. Vue.prototype.$lbus // Gets/Creates a local bus
-3. Vue.prototype.$cbus // Controls the local buses
+1. *Vue.prototype.$gbus*, that gives you access to the global bus
+2. *Vue.prototype.$lbus*, that let yout get access (or create) a local bus
+3. *Vue.prototype.$cbus*, that let you control your local buses (create, delete, purge, get)
+
+### The Bus object
+1. `obj.on(eventName, callback)`:
+    Adds *callback* to the *eventName* callbacks Map. *eventName* is create if it not already exist.
+2. `obj.off([eventName, [callback]])`:
+    Remove *callback* from *eventName*. If *callback* is not specified, removes all callbacks from *eventName*. Also,
+    if none argument specified, remove the *eventName* it self.
+3. `obj.once(eventName, callback)`:
+    Auto removable event.
+ 
+### $cbus
+1. `create(name)`:
+    Create a new context called *name*
+2. `delete(name)`:
+    Removes de context called *name*
+3. `purge()`:
+    Removes all contexts
+4. `get(name)`:
+    Get context *name*. It creates a new context if *name* does not exist. **$lbus** is an alias for **$cbus.get**.
 
 
