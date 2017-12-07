@@ -14,7 +14,7 @@ You can install this plugin using npm
 npm i --save vue-cbus
 ```
 
-## <a name="plugin">Pluggin it into your app</a>
+## <a name="plugin">Plug it into your app</a>
 To use vue-cbus in your VueJS app, you just need to tell VueJS to use it.
 ```js
 import Vue from 'vue'
