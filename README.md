@@ -6,7 +6,7 @@
 5. [Documentation](#doc)
 
 ## <a name="intro">Introduction</a>
-This plugin provides a easy way to handle events in VueJS (V.2) using contexts.  
+This plugin provides an easy way to handle events in VueJS (V.2) using contexts.  
 
 ## Installation <a name="install"></a>
 You can install this plugin using npm
@@ -29,7 +29,7 @@ Vue.use(CBus, {
 The *debugMode* option controls if **vue-cbus** will log debug messages.
 
 ## <a name="usage">Usage</a>
-**vue-cbus** automatically creates a global context when the applcation starts.
+**vue-cbus** automatically creates a global context when the application starts.
 You can access it in your component using *this.$gbus*, like shown in the example
 below
 
@@ -96,17 +96,17 @@ export default {
 
 ## <a name="doc">Documentation</a>
 
-This plugin inject 3 prototypes into the Vue instance:
+This plugin injects 3 prototypes into the Vue instance:
 1. *Vue.prototype.$gbus*, that gives you access to the global bus
 2. *Vue.prototype.$lbus*, that let yout get access (or create) a local bus
 3. *Vue.prototype.$cbus*, that let you control your local buses (create, delete, purge, get)
 
 ### The Bus object
 1. `obj.on(eventName, callback)`:
-    Adds *callback* to the *eventName* callbacks Map. *eventName* is create if it not already exist.
+    Adds *callback* to the *eventName* callbacks Map. *eventName* is create if it does not already exist.
 2. `obj.off([eventName, [callback]])`:
     Remove *callback* from *eventName*. If *callback* is not specified, removes all callbacks from *eventName*. Also,
-    if none argument specified, remove the *eventName* it self.
+    if none argument specified remove the *eventName*.
 3. `obj.once(eventName, callback)`:
     Auto removable event.
  
