@@ -54,7 +54,7 @@ export class Bus {
     if (this.events.has(name)) {
       this.events.get(name).forEach((once, fcn) => {
         cbusLog(`Emitting ${fcn} from event ${name}`, this.context)
-        fcn.call(payload)
+        fcn(payload)
         if (once) this.off(name, fcn)
       })
     }
