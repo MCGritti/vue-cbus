@@ -1,7 +1,7 @@
 # Table of contents
 1. [Introduction](#intro)
 2. [Installation](#install)
-3. [Pluggin it into your app](#plugin)
+3. [Plug it into your app](#plugin)
 4. [Usage](#usage)
 5. [Documentation](#doc)
 
